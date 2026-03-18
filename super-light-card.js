@@ -13,9 +13,9 @@ class SuperLightCard extends LitElement {
   }
   render() {
     return html`
-      <ha-card style="padding: 20px; background: orange; color: white;">
-        <h2>Super Light Card virker!</h2>
-        <p>Entity: ${this.config.entity}</p>
+      <ha-card style="padding: 20px; background: #ff9800; color: white;">
+        <div style="font-size: 20px; font-weight: bold;">Super Light Card virker!</div>
+        <p>Entity: ${this.config.main_entity}</p>
       </ha-card>
     `;
   }
@@ -26,6 +26,6 @@ window.customCards = window.customCards || [];
 window.customCards.push({
   type: "super-light-card",
   name: "Super Light Card",
-  description: "Test kort",
+  description: "Test af Super Light Card",
   preview: true
 });
